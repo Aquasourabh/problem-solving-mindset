@@ -1,13 +1,20 @@
-# Task 2 : 
----
-### Basic Syntex & Comments
- 
-- **Objective:**
+## Task 2: Basic Syntax
 
-Understand Basic syntex and Comments(Single-line `#` and multi-line ''' ... ''')
+### Objective
+Understand basic syntax, indentation, and comments (single-line `#` and multi-line `''' ... '''`).
 
-### Types of comments.
----
-1.`Single line comments(#)`
+### Indentation
+Indentation refers to the spaces at the beginning of a line. Python uses indentation to define blocks of code.
 
-2.`Multiline comment(''' ''')`
+```python
+# This is a single-line comment (Use # to denote a single-line comment)
+print("This refers to # syntax of the single-line comment")  # This prints the statement.
+
+```
+
+### Multi-line Comments
+```python
+""" This is a multi-line comment
+You can use it if you are writing a description.
+"""
+print("This follows the right indentation")
