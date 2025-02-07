@@ -549,4 +549,16 @@ current_balance = 5000
 new_balance = check_balance(current_balance, "withdraw", 1000)
 print("Updated Balance:", new_balance)
 
+emails =["raghav@gmail.com","abid@gmail.com","gaurav@gmail.com"]
+for email in emails:
+     print(f"Sending email to {email}")Passenger = ["Sourabh","Gaurav","Raghav","abid"]
 
+for tickets in Passenger:
+    print(f"Gandhi Path {tickets}")orders = ["Order123","Order345","Order567"]
+for order in orders:
+    print(f"Thank You Sending The {order}. ")flag = input("Entert the flag")
+
+while flag != "Indian":
+    flag = input("Enter the flag again")
+print("You are Indian")    
+    
