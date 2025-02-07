@@ -23,12 +23,19 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
 print(even_numbers)  # Output: [2, 4, 6, 8]
 ```
-
-#### **(c) `reduce()` Function**
+#### **(c) `Sorted()` Function**
+### **Example: Sorting a List**
 ```python
-from functools import reduce
-numbers = [1, 2, 3, 4]
-product = reduce(lambda x, y: x * y, numbers)
-print(product)  # Output: 24
+numbers = [5, 2, 9, 1, 5, 6]
+print(sorted(numbers))  # Output: [1, 2, 5, 5, 6, 9]
 ```
 
+### **Example: Sorting in Descending Order**
+```python
+print(sorted(numbers, reverse=True))  # Output: [9, 6, 5, 5, 2, 1]
+```
+
+### **Example: Sorting with a Custom Key (Sorting by String Length)**
+```python
+words = ["apple", "banana", "kiwi", "cherry"]
+print(sorted(words, key=len))  # Output: ['kiwi', 'apple', 'cherry', 'banana']
