@@ -1,0 +1,552 @@
+# value = None
+# print(value or "Default Value")  # Outputs "Defaul
+# t Value" instead of None
+
+# x, y = map(int, input("Enter two numbers separated by space: ").split())
+# print("Sum:", x + y)
+
+# x ,y = map(int,input("Enter two numbers separated by space ").split())
+# print("sum:", x+y)
+
+# print(type(x))
+# print(type(y))
+
+# numbers = list(map(int , input("Enter numbers: ").split()))
+# print(f"Numbers: {numbers}")
+
+# print(type(numbers))
+
+# name =  "AI Education Academy"
+# age = 25
+# print(f"Name: {name}, Age: {age}")
+
+# try:
+#     age = int(input("Enter your age: "))  # User enters input
+#     print("Your age is:", age)  # Prints the valid age
+# except ValueError:
+#     print("Invalid input! Please enter a number.")  # Handles non-numeric input
+
+# x, y = map(int, input("Enter two numbers separated by space: ").split("@"))
+# #print("sum of no is:", x + y)
+# print( x + y)
+
+
+# import sys
+
+# data = sys.stdin.read()
+# print("Data received:", data)
+
+
+# data1 = sys.stdin.read()
+# print("Data received:", data1)
+
+# print(data + data1)
+
+# data2 = sys.stdin.read()
+# print("Data received:", data2)
+
+# import sys
+
+# # Prompt the user for input or provide input until EOF (Ctrl+D in terminal)
+# print("Enter your data (press Ctrl+D or Ctrl+Z to finish):")
+# data = sys.stdin.read()  # Reads all input until EOF
+
+# # Print the data received
+# print("\nData received:")
+# print(data)
+
+# from getpass import getpass
+
+# password = getpass("Enter your password: ")
+# print("Password entered (hidden for security)")
+# import pwinput
+
+# password = pwinput.pwinput("Enter your password: ", mask="*")
+# print("Password entered (hidden for security)")
+
+# x, y = map(int, input("Enter two numbers separated by space: ").split("@"))
+# print("sum of no is:", x + y)
+# print( x + y)
+
+# from getpass import getpass
+
+# password = getpass("Enter your password: ")
+# print("Password entered (hidden for security)")
+# print(password)
+
+
+# import sys
+
+# lines = []
+# try:
+#     while True:
+#         line = sys.stdin.readline().strip()
+#         if not line:
+#             break  # Exit when an empty line (EOF) is detected
+#         lines.append(line)
+#         print("You entered:", line)  # Print the output immediately
+# except EOFError:
+#     pass  # Handle EOF properly
+
+# # Optional: Print all entered lines after exiting loop
+# print("\nAll Inputs:")
+# for line in lines:
+#   print(line)
+# import sys
+
+# line = sys.stdin.readline()
+# print(f"You entered: {line}")
+
+# a = 5
+# b = 6
+# c = 7
+
+# c = 2**5*6/3
+# print(c)
+
+# a = 1
+# b = 3
+# c = 5
+
+# if a<b or b>c:
+#     print(b)
+# else:
+#     print("nothing")
+
+# a = 10
+# b = 10
+# print(a is b)
+
+# c = [1,2,3,]
+# d = [1,2,3]
+# print(c is d)
+# print(c == d)
+
+# age = int(input("Enter the value"))
+# if age > 18:
+#     print("You can give the vote")
+# else:
+#     print("No you can't give the vote")
+
+# try:
+#     age = int(input("Enter the value"))
+#     print("You can give the vote")
+
+# except ValueError:
+#     print("Enter a valid value")
+
+# except ZeroDivisionError:
+#     print("Not enter the value zero it is not divisible")
+
+# age = 16
+
+# if age >= 18:
+#     print("You can vote")
+# elif age == 17:
+#     print("Almost there! Wait a year.")
+# else:
+#     print("Sorry, too young to vote")
+
+# if "hello":
+#     print("This Prints")
+# if 0:
+#     print("This won;t print")   
+
+# if "":
+#     print("this is not beacuse it is empty")
+
+# username  = "Sourabh"
+# password  = "gupta"
+
+# if username == "Sourabh" and password == "Methi":
+#     print("Login Successfull")
+# else:
+#     print("Entert the Valid Creditelias")    
+
+# user_input = "turn on lights"
+
+# if "on" in user_input:
+#     print("Lights turned ON")
+# elif "off" in user_input:
+#     print("Lights turned OFF")
+# else:
+#     print("Command not recognized")
+
+# age = int(input("Enter the age"))
+# status = "You're Adult" if age > 18 else "Minor"
+# print(status)
+
+# age = int(input("Enter the age"))
+# status = "You're Adult" if 25 >= age > 18 else "you can go to club" if 18 < age  else "minor"
+# print(status)
+
+# input1 = 10
+# input2 = input1
+# print(input1 is input2)
+# print(input1 == input2)
+
+# input1 = "hii i am sourabh and going to make billion dollars and this is abid and he is short"
+# input2 = "hii i am sourabh and going to make billion dollars and this is abid and he is short"
+# print(input1 is input2)
+
+# s1 = "this_is_a_very_long_string"
+# s2 = "this_is_a_very_long_string"
+# print(s1 is s2)  # False (likely stored in different memory locations)
+
+# x = None
+
+# if x is  None:  # Correct way to check for None
+#     print("Variable is None")
+
+
+# input1 = input("Enter your day")
+# match input1:
+#     case "Monday":
+#         print("this is monday")
+#     case "This is Tuesday":
+#         print("Tuesday")
+#     case "Wednesday":
+#         print("This is Wednesday") 
+#     case _:
+#         print("nothing")           
+# is_admin = True
+# if is_admin:
+#     print("admin")
+
+# list1 = [1,2,3] 
+# list2 = [1,2,3] 
+
+# print(list1 is list2)
+# print(list1 == list2)
+
+# error = int(input('Enter the Error'))
+# match error:
+#     case 300:
+#      print("Nothing")
+#     case 301:
+#      print("Something")
+#     case 400:
+#      print("Website Eorr") 
+#     case _ :
+#      print("Can't figure it out")  
+   
+
+
+# class Example:
+#     def __eq__(self, other):
+#         return True  # Custom behavior
+
+# x = Example()
+# print(x == None)  # True (unexpected result)
+# print(x is None)  # False (correct check)
+
+
+# vegetables = ["bhindi","Spinach","Potato","Tomato0"]
+# for vegiies in vegetables:
+#     print(vegiies)
+
+# for tables in range(2,21,2):
+#     print(tables)
+
+# for i in "Python":
+#     print(i)
+
+# data = {"name": "Ai Education Academy",
+#         "age" : 25
+#         }
+# for key,value in data.items():
+#     print(key,"-",value)
+
+# count = 0
+# while count <=5:
+#     print(count)
+#     count += 1
+
+# num = 1
+# while num < 10:
+#     print(num)
+#     if num == 5:
+#         break
+#     num += 1
+
+# for i in range(5):
+#     if i == 2:
+#         continue
+#     print(i)
+
+
+# for i in range (5):
+#     for j in range(3):
+#         print(f"i={i},j = {j}"
+ 
+
+
+
+
+
+
+
+# import json
+
+# # Function to load expenses from file
+# def load_expenses():
+#     try:
+#         with open("expenses.json", "r") as file:
+#             expenses = json.load(file)
+#     except FileNotFoundError:
+#         expenses = []
+#     return expenses
+
+# # Function to save expenses to a file
+# def save_expenses(expenses):
+#     with open("expenses.json", "w") as file:
+#         json.dump(expenses, file)
+
+# # Function to add an expense
+# def add_expense(expenses):
+#     try:
+#         amount = float(input("Enter the expense amount: "))
+#         category = input("Enter the category (e.g., food, entertainment): ")
+#         description = input("Enter a description: ")
+        
+#         expense = {
+#             "amount": amount,
+#             "category": category,
+#             "description": description
+#         }
+#         expenses.append(expense)
+#         print("Expense added successfully.")
+#     except ValueError:
+#         print("Invalid input! Please enter a valid number for the expense amount.")
+
+# # Function to view expenses
+# def view_expenses(expenses):
+#     if len(expenses) == 0:
+#         print("No expenses recorded yet.")
+#     else:
+#         for expense in expenses:
+#             print(f"Amount: ${expense['amount']} | Category: {expense['category']} | Description: {expense['description']}")
+
+# # Function to analyze spending
+# def analyze_spending(expenses):
+#     category_totals = {}
+#     for expense in expenses:
+#         category = expense["category"]
+#         category_totals[category] = category_totals.get(category, 0) + expense["amount"]
+    
+#     print("Spending breakdown by category:")
+#     for category, total in category_totals.items():
+#         print(f"{category}: ${total:.2f}")
+
+# # Main menu
+# def main():
+#     expenses = load_expenses()
+    
+#     while True:
+#         print("\nPersonal Expense Tracker")
+#         print("1. Add an expense")
+#         print("2. View expenses")
+#         print("3. Analyze spending")
+#         print("4. Exit")
+        
+#         choice = input("Enter your choice (1-4): ")
+        
+#         if choice == "1":
+#             add_expense(expenses)
+#         elif choice == "2":
+#             view_expenses(expenses)
+#         elif choice == "3":
+#             analyze_spending(expenses)
+#         elif choice == "4":
+#             save_expenses(expenses)
+#             print("Goodbye!")
+#             break
+#         else:
+#             print("Invalid choice. Please try again.")
+
+# # Run the program
+# if __name__ == "__main__":
+#     main()
+
+# for i in range(3):
+#     print(i)
+#     if i == 1:
+#         break
+# else:
+#     print("Loop complted")    
+# for i in range(3):
+#     if i == 1:
+#         break
+#     print(i)
+# else:
+#     print("Loop completed!")
+
+
+# password = 12345
+# max_pass =  0 
+# user_input = int(input("Enter the password "))
+
+# while password != user_input:
+#     user_input = int(input("Enter the password again "))
+#     max_pass += 1
+#     if max_pass == 4:
+#         break
+#     print("You have Reached the maximum limit try after 24 hours")
+
+# else:
+#     print("You an Access the System")
+
+
+# import getpass
+
+# # Prompt the user to enter a password without displaying it
+# password = getpass.getpass("Enter your password: ")
+
+# # Output the entered password (just for demonstration, you would not do this in real scenarios)
+# print("You entered a password of length:", len(password))
+
+
+# import getpass
+
+# # Prompt the user to enter a password without displaying it
+# password = getpass.getpass("Enter your password: ")
+
+# import getpass
+
+# password = 12345
+# max_pass =  0 
+# user_input = int(getpass.getpass("Enter the Password: "))
+
+# while password != user_input:
+#     user_input = int(input("Enter the password again: "))
+#     max_pass += 1
+#     if max_pass == 2:
+#         print("You have Reached the maximum limit try after 24 hours")
+#         break
+    
+
+# else:
+#     print("You an Access the System")
+
+
+# my_list = [1,2,3,4,5]
+# squred = [x ** 2 for x in my_list]
+# print(squred)
+
+# my_list = [1,2,3,4,5]
+# squared = list(map(lambda x: x** 2 , my_list))
+# print(squared)
+
+
+
+
+
+# for i in my_list:
+#     print(f"{i} = {i ** 2}")
+
+# squares = []
+# for x in range(5):
+#     squares.append("*" ** x)
+#     print(squares)    
+# numbers = [1,2,3,4,5]
+# for x in numbers:
+#     if x%2 == 0:
+#         print(x)
+#         print(type(x))
+
+# numbers = [1,2,3,4,5]
+# even_squares = [x**2 for x in numbers if x % 2 == 0]
+# print(even_squares)
+# print(type(even_squares))
+
+# words = ["apple", "bananaa", "cherry", "date"]
+# lengths = [len(word) for word in words if len(word) > 5]
+# print(lengths)  
+
+# veggies = ["Potato","Tomato","Ginger"]
+
+# for i in  range(len(veggies)):
+#     print(f"{i} , {veggies[i]}")
+
+
+# veggies = ["Potato","Tomato","Ginger"]
+# grocery = [(i,veggies[i]) for i in range(len(veggies))]
+# print(grocery)
+
+
+
+# veggies = ["Potato","Tomato","Ginger"]
+
+# for fruit , i in enumerate(veggies):
+#     print(i,fruit)
+
+# marks = int(input("Enter the message"))
+
+# if marks > 90:
+#   print("Exellent")
+
+# elif marks > 80:
+#   print("Good")
+
+# else:
+#   print("Needs Improvement") 
+
+
+# def basic(name):
+#     return f"Hello, {name}!"
+
+# basic("abid")
+# #print(basic("Sourabh"))
+
+
+# def  abc(x):
+#     return f"Hello",{}
+# def multi():
+#     return 10,20
+
+# x,y = multi()
+# print(x,y)
+
+# def add(a,b):
+#     return a + b
+# print(add(5,3))
+
+# def multiply(x):
+#     return x * 2
+
+# multiply(add())
+
+from datetime import datetime
+
+def greet_user(name):
+    hour = datetime.now().hour
+    if hour < 12:
+        return f"Good morning, {name}!"
+    elif hour < 18:
+        return f"Good afternoon, {name}!"
+    else:
+        return f"Good evening, {name}!"
+
+# Example usage
+print(greet_user("Sourabh"))
+
+def calculate_bmi(weight, height):
+    bmi = weight / (height ** 2)
+    return bmi
+
+
+bmi = calculate_bmi(weight=70, height=1.75)
+print("BMI:", round(bmi, 2))  
+
+def check_balance(balance, transaction, amount):
+    if transaction == "deposit":
+        balance += amount
+    elif transaction == "withdraw" and balance >= amount:
+        balance -= amount
+    return balance
+
+current_balance = 5000
+new_balance = check_balance(current_balance, "withdraw", 1000)
+print("Updated Balance:", new_balance)
+
+
