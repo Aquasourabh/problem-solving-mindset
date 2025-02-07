@@ -1,4 +1,4 @@
-## **9. Lambda Functions & Higher-Order Functions in Python**
+## **Lambda Functions & Higher-Order Functions:**
 ### **1. Lambda Functions**
 Lambda functions are single-expression functions in Python.
 
