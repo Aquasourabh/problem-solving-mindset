@@ -1,4 +1,4 @@
-## **.Functions in Python**
+## **Functions in Python**
 Functions in Python allow code reusability by grouping a set of statements together under a single name.
 
 ### **1. Basic Function Syntax **
