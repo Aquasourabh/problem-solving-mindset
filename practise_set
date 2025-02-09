@@ -561,4 +561,87 @@ for order in orders:
 while flag != "Indian":
     flag = input("Enter the flag again")
 print("You are Indian")    
-    
+
+
+def calculate_speed(distance, time):
+    if time == 0:
+        return "Time cannot be zero!"
+    speed = distance / time
+    return speed
+
+# Example
+print(calculate_speed(100, 2))  # Output: 50.0
+print(calculate_speed(150, 3))  # Output: 50.0
+
+def calculate_interest(principal, rate, time):
+    interest = (principal * rate * time) / 100
+    return interest
+
+
+print(calculate_interest(10000, 5, 2))  # Output: 1000.0
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+
+print(celsius_to_fahrenheit(25))  # Output: 77.0
+def calculate_bill(amount, discount_percent):
+    discount = (discount_percent / 100) * amount
+    final_amount = amount - discount
+    return final_amount
+
+print(calculate_bill(1000, 10))  # Output: 900.0
+
+def transaction(amount):
+    def log_transaction():
+        print(f"Transaction of ₹{amount} logged successfully.")
+
+    if amount > 0:
+        log_transaction()
+        print(f"Transaction of ₹{amount} completed.")
+    else:
+        print("Invalid transaction!")
+
+transaction(1000)
+
+
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+fibonacci(10)
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
+
+
+print(factorial(5))  # Output: 120
+def print_even_numbers(n):
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            print(i, end=" ")
+
+print_even_numbers(10)
+def reverse_number(num):
+    reverse = 0
+    while num > 0:
+        digit = num % 10
+        reverse = reverse * 10 + digit
+        num //= 10
+    return reverse
+
+
+print(reverse_number(1234))  # Output: 4321
+def count_digits(num):
+    count = 0
+    while num > 0:
+        num //= 10
+        count += 1
+    return count
+
+
+print(count_digits(12345))  # Output: 5
+
