@@ -30,7 +30,7 @@ s1.name = "sourabh"
 s1.age = 23
 s1.tell()
 
-Every time you create a new object, you must manually set attributes everytime.
+It does not take arguments except slef Every time you create a new object, you must manually set attributes everytime.
 ```
 
 # Q2. As we know python object stores attributes and  values in dictionary format and each object has separate dictionary by memory overhead or consumption increase
