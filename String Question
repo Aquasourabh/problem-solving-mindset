@@ -1,0 +1,31 @@
+a = [1,2,3,4,5]
+b = ['A','B','C','D','E']
+c = []
+
+for i in range (len(a)):
+    c.append(a[i])
+    c.append(b[i])
+
+
+print(f"List a: {a}")
+print(f"List b: {b}")
+print(f"List c: {c}")
+
+
+multi_dimensional=[{c[j+1]: [c[j]]}for j in range (0,len(c),2)]
+
+print(f'Create the Multi_Dimensional : {multi_dimensional}')
+
+c1=[]
+for elements in multi_dimensional:
+    for key, value in elements.items():
+        c1.append(value[0])
+        c1.append(key)
+
+print(f'reverse back the multi-dimensional list  : {c1}')
+
+a1=c1[0::2]
+b1=c1[1::2]
+
+print(f"Create the List a reverse back from new List c: {a1}")
+print(f"Create List b reverse back from new List c: {b1}")
