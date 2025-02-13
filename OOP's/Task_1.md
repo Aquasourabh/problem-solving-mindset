@@ -1,4 +1,4 @@
-# **Class:** While reading a class i stuck a Probelm as we know __init__ constructor used to intiliazed the objetcs what happens we do not initialize the objects
+# **Class:** While reading a class i stuck a Probelm as we know __init__ constructor used to intiliazed the objetcs what happens we do not use init
 
 ```.py
 class sourabh():
