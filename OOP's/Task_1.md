@@ -1,5 +1,5 @@
 #Q3 **Class:** While reading a class i stuck a Probelm as we know __init__ constructor used to intiliazed the objetcs what happens we do not use init
-
+Ans:When we use the __init__ constructor in Python, we don’t need to manually set attributes every time we create a new object. The constructor automatically initializes instance variables with the provided values and if we do not use __init__, we must manually assign values to each attribute after creating an object. 
 ```.py
 class sourabh():
     def __init__(self,name,age):
@@ -11,7 +11,9 @@ class sourabh():
 
 
 s1 = sourabh("sourabh",23)
+s2 = sourabh("Abid","23")
 s1.tell()
+s2.tell()
 
 
 ---    So here we do not need to write attributes manually
@@ -20,21 +22,27 @@ s1.tell()
 ```
 
 ```.py
-class sourabh():
+class Person():
     def tell(self):
         print(f"{self.name} is {self.age}")
 
 
-s1 = sourabh()
+s1 = Person()
 s1.name = "sourabh"
 s1.age = 23
 s1.tell()
 
-It does not take arguments except slef Every time you create a new object, you must manually set attributes everytime.
+s2 = Person()
+s2.name = "Abid"
+s2.age = 24
+s2.tell()
+
+
+Every time you create a new object, you must manually set attributes everytime and It does not take arguments except slef
 ```
 
 # Q14. As we know python object stores attributes and  values in dictionary format and each object has separate dictionary by memory overhead or consumption increase
-Ans : to avoid this we use slots(It is a class attribute that control how python stores instance attributes and __slots__ does not replace the need of init because __init__ do different work and __slots__ do different work) and it coverted dictionary into tuples to store the data
+Ans : to avoid this we use slots(It is a class attribute that control how python stores instance attributes and __slots__ does not replace the need of init because __init__ do different work and __slots__ do different work) and it  stores attributes in a tuple-like structure not in dictinoary
 
 without use __slots__
 ```.py
@@ -44,21 +52,25 @@ class Car:
         self.model = model  
 
 car1 = Car("Toyota", "Camry")
-print(car1.brand)  #  Toyota
-print(car1.model)  #  Camry
+print(car1.brand)  
+print(car1.model)  
 
 car2 = Car("Alto", "800")
 print(car2.brand)  
-print(car2.model)  
+print(car2.model) 
+
+print(car1.__dict__)
+print(car2.__dict__)
+
 it increases the Memory consumption
 
 Output:
 {'brand': 'Toyota', 'model': 'Camry'}
-{'brand': 'Toyota', 'model': 'Camry'}
+{'brand': 'Alto', 'model': '800'}
 
 ```
 
-with __slots__ It stores the attribute value in the tuple format by which memory consumtion decreases
+with __slots__ It stores attributes in a tuple-like structure by which memory consumtion decreases
 ```.py
 class Car:
     __slots__ = ('brand', 'model')  # Restrict attributes to these only
@@ -74,7 +86,11 @@ print(car1.__slots__)  Output: ('brand', 'model')
 print(car2.__slots__)  Output: ('brand', 'model')
 ```
 
-# Q1.Can we define a class without using class keyword in python ?
+__slots__ stores attributes in a tuple-like structure, not a dictionary.
+It reduces memory usage by avoiding the overhead of a dictionary.
+It is useful when dealing with a large number of objects to improve performance.
+
+# Q1.Can we define a class without using class keyword in python.
 
 - Answer: Yes We define class without usimg class keyword in python by Tyepe() keyword but when we type() it decreases the readiablity and we can't use the init constructor
 
